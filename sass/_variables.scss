@@ -1,0 +1,45 @@
+
+
+$dark-brown:#7C593C;
+$light-blue:#C7F7FF;
+$light-brown : #C9A689;
+$dark-blue: #3a5E63;
+
+//$bg-footerbcolor: #fff;
+$light-grey: #d4d4d4;
+
+$med-blue: #89C0C9;
+
+$colorwhite:#fff;
+$dark-grey:#222;
+
+$htmlFont:'Josefin Sans', ‘Trebuchet MS’, Helvetica, sans-serif;
+$headingsFont: Cardo, ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif; /* serif for the headings */
+$Cardo: Cardo, 'Palatino Linotype', 'Book Antiqua', sans-serif;
+
+//Font-Size
+$default-font-size:16px;
+$fs_1414rem: 1.414rem;
+$fs_7rem: 7rem;
+$fs_399rem: 3.998rem;
+
+$default-lh:1.6;
+$bsize:1rem;
+$breakpoints: (
+  'medium': (min-width: 800px),
+  'large': (min-width: 1000px),
+  'huge': (min-width: 1401px),
+);
+
+//width
+$width20pc: 20%;
+$width25pc: 25%;
+$width30pc: 30%;
+$width50pc: 50%;
+$width75pc: 75%;
+$width100pc: 100%;
+$width400px: 400px;
+$width600px: 600px;
+$width700px: 700px;
+$width900px: 900px;
+$width1400px:1400px;

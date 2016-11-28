@@ -1,0 +1,52 @@
+@media all and (min-width: 701px) and (max-width: 900px) {
+  header {
+    width: 700px;
+    margin: 0 auto;
+    min-height: 8rem;
+    h1 {
+      width: 100%;
+      color: #7C593C;
+    }
+    &:before, &:after {
+      width: 230px;
+    }
+    h1 i.fa-lg {
+      display: inline;
+      color: #7C593C;
+      vertical-align: baseline;
+      float: none;
+      font-size: 4rem;
+      line-height: 6.3968rem;
+      ~ span {
+        float: none;
+        letter-spacing: 0.25rem;
+        font-size: 3.998rem;
+        /**
+        1 lines of 3.998 * 1.6 = 6.3968
+        **/
+        text-align: left;
+      }
+    }
+    nav {
+      position: static;
+      clear: both;
+      width: 100%;
+      padding: 0;
+      > ul > li {
+        width: 20%;
+        float: left;
+        > a {
+          font-size: 1rem;
+          line-height: 2rem;
+          min-height: 6rem;
+          border: none;
+          border-left: 1px solid #d4d4d4;
+          padding: 1.0rem;
+          background-color: #fff;
+          &:last-child {
+            border-right: 1px solid #d4d4d4;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,157 @@
+
+
+@mixin bs($bs-type: border-box) {
+	padding:0;
+	margin: 0;
+	-webkit-box-sizing: $bs-type;
+    box-sizing: $bs-type;
+}
+
+@mixin fsNpaddinginfo_fo{
+	font-size: 1.999rem;
+	padding: 2rem 2rem 1rem 2rem;
+}
+
+@mixin fsNpaddinginfo_au{
+		font-size: 1rem;
+		padding: 0.2rem 2rem 2rem;
+}
+
+@mixin bg_backgroundmake($name,$bcolor,$ccolor){
+	.bg-#{$name} {
+			background-color: $bcolor;
+	color: $ccolor;
+	}
+}
+$h3-fontsize:1.999rem;
+@mixin contents_maker($contname)
+{
+	@if $contname == h3{
+		font-size: 1.999rem;
+		padding: 1rem 2rem 0.5rem;
+	}
+	@else if $contname == h4{
+		font-size: 1.999rem;
+		padding: 1rem 2rem 0rem;
+	}
+	@else if $contname == p{
+		font-size: 1.414rem;
+		padding: 0.5rem 2rem 1rem;
+	}
+	@else if $contname == li{
+		padding: 0.5rem 2rem;
+		font-size: 1.414rem;
+	}
+}
+
+@mixin media($minwidth,$maxwidth){
+	@media all and (min-width:$minwidth) and (max-width:$maxwidth)
+	{
+		@content;
+	}
+
+}
+@mixin maxmedia($minwidth){
+	@media all and(min-width:$minwidth)
+	{
+		@content;
+	}
+
+}
+$width-small : 400px;
+$width-medium: 760px;
+$width-large: 1401px;
+
+@mixin mediaheader($width1,$width2){
+	width:$width1;
+	margin: 0 auto;
+	@if $width1 == 700px {
+		min-height: 8rem;
+	}
+	&:before, &:after {
+		 width: $width2;
+	 }
+}
+
+@mixin mediah1($color){
+	h1 {
+	width: 100%;
+	color: $color;//#3a5E63;
+	i.fa-lg {
+		display: inline;
+		color: $color;//#3a5E63;
+		vertical-align: baseline;
+		float: none;
+		font-size: 4rem;
+		line-height: 6.3968rem;
+		//@extend ~.span;
+		 ~ span {
+			 float: none;
+			 letter-spacing: 0.25rem;
+			 font-size: 3.998rem;
+			 /**
+			 1 lines of 3.998 * 1.6 = 6.3968
+			 **/
+			 text-align: left;
+		 }
+		}
+	}
+}
+@mixin medianav($width1,$width2)
+{
+    nav {
+		position: static;
+      	clear: both;
+      	width: $width100pc;
+      	padding: 0;
+      	> ul > li {
+        	width: $width20pc;
+        	float: left;
+		  
+		  	@if $width1 >= 900px{
+				background-color: $colorwhite;
+			}
+		  	> a {
+		  	@if $width1 < 1400px{
+				font-size: 1rem;
+				} @else{
+					font-size: 1.414rem;
+				}				
+				
+          		line-height: 2rem;
+			  
+				@if $width1== 700px{
+					min-height: 6rem;
+				  	padding: 1.0rem;
+				}@else if $width1 >= 900px{
+					min-height: 2rem;
+				    padding: 0 1.0rem;
+				  	margin: 1.0rem 0;
+				}
+				border: none;
+				border-left: 1px solid $light-grey;
+				background-color: $colorwhite;
+		  }
+			
+		  @if $width1 == 700px {
+			  &:last-child {
+				  border-right: 1px solid $light-grey;
+			  }
+			}@else if $width1>=900px{
+			         &:first-child a {
+						 border-left: none;
+				}
+			}
+		}
+	}	  
+}
+
+@mixin equalSpaced( $num_of_cols, $gutter, $width:100%  ){
+  width: ( $width - ( $gutter * ($num_of_cols - 1) ) ) / $num_of_cols;
+  margin-left: $gutter;
+  float: left;
+  // Remove Spacing from First Child
+  &:first-child{
+    margin-left: 0;
+  }
+}
