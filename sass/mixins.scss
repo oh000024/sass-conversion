@@ -8,7 +8,7 @@
 }
 
 @mixin fsNpaddinginfo_fo{
-	font-size: 1.999rem;
+	//font-size: 1.999rem;
 	padding: 2rem 2rem 1rem 2rem;
 }
 
@@ -20,27 +20,26 @@
 @mixin bg_backgroundmake($name,$bcolor,$ccolor){
 	.bg-#{$name} {
 			background-color: $bcolor;
-	color: $ccolor;
+			color: $ccolor;
 	}
 }
-$h3-fontsize:1.999rem;
 @mixin contents_maker($contname)
 {
 	@if $contname == h3{
-		font-size: 1.999rem;
+		//font-size: 1.999rem;
 		padding: 1rem 2rem 0.5rem;
 	}
 	@else if $contname == h4{
-		font-size: 1.999rem;
+		//font-size: 1.999rem;
 		padding: 1rem 2rem 0rem;
 	}
 	@else if $contname == p{
-		font-size: 1.414rem;
-		padding: 0.5rem 2rem 1rem;
+		//font-size: 1.414rem;
+		padding: 0.5rem 2rem 1rem
 	}
 	@else if $contname == li{
-		padding: 0.5rem 2rem;
-		font-size: 1.414rem;
+		//font-size: 1.414rem;
+		padding: 0.5rem 2rem
 	}
 }
 
@@ -107,7 +106,7 @@ $width-large: 1401px;
       	> ul > li {
         	width: $width20pc;
         	float: left;
-		  
+
 		  	@if $width1 >= 900px{
 				background-color: $colorwhite;
 			}
@@ -116,13 +115,13 @@ $width-large: 1401px;
 				font-size: 1rem;
 				} @else{
 					font-size: 1.414rem;
-				}				
-				
-          		line-height: 2rem;
-			  
+				}
+
+        line-height: 2rem;
+
 				@if $width1== 700px{
 					min-height: 6rem;
-				  	padding: 1.0rem;
+				  padding: 1.0rem;
 				}@else if $width1 >= 900px{
 					min-height: 2rem;
 				    padding: 0 1.0rem;
@@ -132,7 +131,7 @@ $width-large: 1401px;
 				border-left: 1px solid $light-grey;
 				background-color: $colorwhite;
 		  }
-			
+
 		  @if $width1 == 700px {
 			  &:last-child {
 				  border-right: 1px solid $light-grey;
@@ -143,12 +142,14 @@ $width-large: 1401px;
 				}
 			}
 		}
-	}	  
+	}
 }
 
 @mixin equalSpaced( $num_of_cols, $gutter, $width:100%  ){
   width: ( $width - ( $gutter * ($num_of_cols - 1) ) ) / $num_of_cols;
-  margin-left: $gutter;
+	@if $gutter != 0{
+		margin-left: $gutter;
+	}
   float: left;
   // Remove Spacing from First Child
   &:first-child{
