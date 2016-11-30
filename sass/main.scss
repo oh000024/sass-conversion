@@ -215,7 +215,7 @@ header {
 
 footer {
   h4 {
-    font-size: 1.414rem;
+    font-size: $default-fs-ssizerem;//1.414rem;
     padding: 0.5rem 2rem;
     color: $dark-brown
   }
