@@ -40,7 +40,10 @@ p,li{
 ul {
   list-style: none;
 }
-
+.default_wm{
+	width: $width400px;
+	margin: 0 auto;
+}
 // SPECIAL
 .clearfix:after {
   display: table;
@@ -79,9 +82,10 @@ ul {
 @include bg_backgroundmake('footer',$colorwhite,$light-grey);
 
 header {
-  width: $width400px;
-  /* default */
-  margin: 0 auto;
+//  width: $width400px;
+//  /* default */
+//  margin: 0 auto;
+	@extned .default_wm;
   position: relative;
   h1 {
     width: $width100pc;
@@ -98,8 +102,9 @@ header {
 
 section {
   &.focal {
-    width: $width400px;
-    margin: 0 auto;
+//    width: $width400px;
+//    margin: 0 auto;
+	  @extned .default_wm;
   }
   &.content1, &.content2 {
     padding: 2rem 0;
@@ -285,7 +290,7 @@ footer {
 
 @include media(901px,1400px) {
 	  header {
-		 @include mediaheader(900px,300px);
+		  @include mediaheader(900px,300px);
 		  @include  mediah1($dark-blue);
 		  @include medianav(900px,300px)
   }
