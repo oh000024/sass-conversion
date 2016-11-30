@@ -147,9 +147,9 @@ $width-large: 1401px;
 
 @mixin equalSpaced( $num_of_cols, $gutter, $width:100%  ){
   width: ( $width - ( $gutter * ($num_of_cols - 1) ) ) / $num_of_cols;
-	//@if $gutter != 0{
-		//margin-left: $gutter;
-	//}
+	@if $gutter != 0{
+		margin-left: $gutter;
+	}
   float: left;
   // Remove Spacing from First Child
   &:first-child{

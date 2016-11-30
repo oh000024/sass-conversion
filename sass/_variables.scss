@@ -1,27 +1,41 @@
 
-
+// Color
 $dark-brown:#7C593C;
 $light-blue:#C7F7FF;
 $light-brown : #C9A689;
 $dark-blue: #3a5E63;
-
-//$bg-footerbcolor: #fff;
 $light-grey: #d4d4d4;
-
 $med-blue: #89C0C9;
-
 $colorwhite:#fff;
 $dark-grey:#222;
 
+// Font Family
 $htmlFont:'Josefin Sans', ‘Trebuchet MS’, Helvetica, sans-serif;
 $headingsFont: Cardo, ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif; /* serif for the headings */
 $Cardo: Cardo, 'Palatino Linotype', 'Book Antiqua', sans-serif;
 
+
 //Font-Size
-$default-font-size:16px;
-$fs_1414rem: 1.414rem;
-$fs_7rem: 7rem;
-$fs_399rem: 3.998rem;
+
+$default-font-sizepx:16px;
+$default-fs-xsizerem:1rem;
+$default-fs-lsizerem:1.999rem;
+$default-fs-ssizerem:1.414rem;
+$default-fs-lsizerem:3.998rem;
+
+//Medium size
+
+//Large size
+$lsc-fs-lsizerem:3.998rem;
+$lsc-fs-ssizerem:2.827rem;
+// Font Weight
+$lsc_fw100: 100;
+$lsc_fw400: 400;
+$lsc_fw700: 700;
+
+
+$bfs_7rem: 7rem;
+//$fs_399rem: 3.998rem;
 
 $default-lh:1.6;
 $bsize:1rem;

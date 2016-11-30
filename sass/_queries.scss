@@ -1,3 +1,5 @@
+
+
 @mixin media($minwidth,$maxwidth){
 	@media all and (min-width:$minwidth) and (max-width:$maxwidth)
 	{
@@ -10,5 +12,4 @@
 	{
 		@content;
 	}
-
 }

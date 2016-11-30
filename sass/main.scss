@@ -29,21 +29,19 @@ html {
 }
 
 h1, h2, h3, h4 {
-  font-family:$headingsFont;
-  font-size: 1.999rem
+  //font-family:$headingsFont;
+  //font-size: 1.999rem;
+  font:bold 1.999rem/1.6  $headingsFont;
   /* serif for the headings */
 }
 p,li{
-  font-size: 1.414rem;
+  font-size: $default-fs-ssizerem//1.414rem;
 }
 
 ul {
   list-style: none;
 }
-.default_wm{
-	width: $width400px;
-	margin: 0 auto;
-}
+
 // SPECIAL
 .clearfix:after {
   display: table;
@@ -82,10 +80,9 @@ ul {
 @include bg_backgroundmake('footer',$colorwhite,$light-grey);
 
 header {
-//  width: $width400px;
-//  /* default */
-//  margin: 0 auto;
-	@extned .default_wm;
+  width: $width400px;
+  /* default */
+  margin: 0 auto;
   position: relative;
   h1 {
     width: $width100pc;
@@ -102,9 +99,8 @@ header {
 
 section {
   &.focal {
-//    width: $width400px;
-//    margin: 0 auto;
-	  @extned .default_wm;
+    width: $width400px;
+    margin: 0 auto;
   }
   &.content1, &.content2 {
     padding: 2rem 0;
@@ -142,7 +138,7 @@ header {
       text-align: center;
       text-decoration: none;
       color: $dark-grey;//#222;
-      font-size: $fs_1414rem;//1.414rem;
+      font-size: $default-fs-ssizerem;//1.414rem;
       letter-spacing: 0.25rem;
       border: 1px solid $light-grey;//#d4d4d4;
       border-bottom: none;
@@ -162,13 +158,13 @@ header {
       display: block;
       width: $width25pc;
       float: left;
-      font-size: $fs_7rem;//7rem;
+      font-size: $bfs_7rem;//7rem;
       line-height: 12.7936rem;
       color: $light-brown ;//#C9A689;
       ~ span {
         float: right;
         width: $width75pc;
-        font-size: $fs_399rem;//3.998rem;
+        font-size: $default-fs-lsizerem;//3.998rem;
         padding-left: $bsize;
         text-align: right;
       }
@@ -219,12 +215,12 @@ header {
 
 footer {
   h4 {
-    font-size: 1.414rem;
+    font-size: $default-fs-ssizerem;//1.414rem;
     padding: 0.5rem 2rem;
     color: $dark-brown
   }
   p {
-    font-size: 1rem;
+    font-size: $default-fs-xsizerem;//1rem;
     padding: 0.5rem 2rem;
     color: $dark-grey;//#222;
   }
@@ -266,7 +262,7 @@ footer {
   }
   section.content2 {
     h4, li {
-      font-size: 1.414rem
+      font-size: $default-fs-ssizerem;//1.414rem
     }
   }
   footer {
@@ -290,7 +286,7 @@ footer {
 
 @include media(901px,1400px) {
 	  header {
-		  @include mediaheader(900px,300px);
+		 @include mediaheader(900px,300px);
 		  @include  mediah1($dark-blue);
 		  @include medianav(900px,300px)
   }
@@ -322,16 +318,16 @@ footer {
       //font-size: 1.999rem;
       font-weight: 100;
       .fa-2x {
-        font-size: 1.999rem;
+        font-size: $default-fs-lsizerem;//1.999rem;
         padding-right: 1rem
       }
     }
     &.content2 {
       h4, li {
-        font-size: 1.414rem;
+        font-size: $default-fs-ssizerem;//1.414rem;
       }
       p {
-        font-size: 1rem;
+        font-size: $default-fs-xsizerem;//1rem;
         font-weight: 400
       }
     }
@@ -368,7 +364,7 @@ footer {
   }
   section.focal {
     h2 {
-      font-size: 3.998rem;
+      font-size: $lsc-fs-lsizerem;//3.998rem;
       width: $width600px;
       margin: 0 auto
     }
@@ -389,7 +385,7 @@ footer {
 
       font-weight: 100;
       .fa-2x {
-        font-size: 2.827rem;
+        font-size: $lsc-fs-ssizerem;//2.827rem;
         padding-right: 1rem;
         vertical-align: middle
       }
