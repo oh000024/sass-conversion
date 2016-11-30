@@ -203,7 +203,7 @@ header {
     }
   }
   p {
-    font-size: 1.414rem;
+    //font-size: 1.414rem;
     padding: 0.5rem 2rem 2rem
   }
 }
@@ -382,7 +382,7 @@ footer {
   }
   .col-3 {
 	  @include equalSpaced(3,5%);
-    font-size: 2.827rem;
+    //font-size: 2.827rem;
   }
   .col-4 {
 	  @include equalSpaced(4,4%);
