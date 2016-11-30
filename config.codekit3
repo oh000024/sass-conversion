@@ -39,6 +39,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/css\/org_main-min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/org_main-min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/css\/org_main.css": {
 		"aP": 0,
 		"bl": 0,
@@ -141,32 +151,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/_font_family.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/_main-02.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/_main-02.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/_main04.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/_main04.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
