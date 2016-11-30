@@ -27,13 +27,6 @@ html {
   /* default for whole page */
 
 }
-//html {
-//    font: $default-font-size $default-lh $htmlFont;
-    //font-size: $default-font-size;
-    //font-family: $htmlFont;
-    /* default for whole page */
-    //line-height: 1.6;//$default-lh//1.6;
-//}
 
 h1, h2, h3, h4 {
   font-family:$headingsFont;
@@ -57,7 +50,6 @@ ul {
 
 // LAYOUT
 .bg-header {
-  //background-color: $colorwhite;
   background-color: $light-blue;//#C7F7FF;
   color: $dark-grey;//#222;
   border-bottom: $bsize solid $med-blue;//#89C0C9;
@@ -398,11 +390,7 @@ footer {
       }
     }
     &.content2 {
-      // h4, li {
-      //   font-size: 1.999rem
-      // }
       p {
-        //font-size: 1.414rem;
         font-weight: 400
       }
     }
