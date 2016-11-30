@@ -220,7 +220,7 @@ footer {
     color: $dark-brown
   }
   p {
-    font-size: 1rem;
+    font-size: $default-fs-xsizerem;//1rem;
     padding: 0.5rem 2rem;
     color: $dark-grey;//#222;
   }
@@ -262,7 +262,7 @@ footer {
   }
   section.content2 {
     h4, li {
-      font-size: 1.414rem
+      font-size: $default-fs-ssizerem;//1.414rem
     }
   }
   footer {
@@ -318,16 +318,16 @@ footer {
       //font-size: 1.999rem;
       font-weight: 100;
       .fa-2x {
-        font-size: 1.999rem;
+        font-size: $default-fs-lsizerem;//1.999rem;
         padding-right: 1rem
       }
     }
     &.content2 {
       h4, li {
-        font-size: 1.414rem;
+        font-size: $default-fs-ssizerem;//1.414rem;
       }
       p {
-        font-size: 1rem;
+        font-size: $default-fs-xsizerem;//1rem;
         font-weight: 400
       }
     }
@@ -364,7 +364,7 @@ footer {
   }
   section.focal {
     h2 {
-      font-size: 3.998rem;
+      font-size: $default-fs-xlsizerem;//3.998rem;
       width: $width600px;
       margin: 0 auto
     }
@@ -385,7 +385,7 @@ footer {
 
       font-weight: 100;
       .fa-2x {
-        font-size: 2.827rem;
+        font-size: $lsc-fs-ssizerem;//2.827rem;
         padding-right: 1rem;
         vertical-align: middle
       }
