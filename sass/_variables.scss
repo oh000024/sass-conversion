@@ -15,17 +15,15 @@ $headingsFont: Cardo, ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, ser
 $Cardo: Cardo, 'Palatino Linotype', 'Book Antiqua', sans-serif;
 
 //Font-Size
-
 $default-font-sizepx:16px;
 $default-fs-xsizerem:1rem;
-$default-fs-lsizerem:1.999rem;
 $default-fs-ssizerem:1.414rem;
+$default-fs-lsizerem:1.999rem;
 $default-fs-xlsizerem:3.998rem;
 
 //Medium size
-
 //Large size
-$lsc-fs-lsizerem:3.998rem;
+//$lsc-fs-lsizerem:3.998rem;
 $lsc-fs-ssizerem:2.827rem;
 // Font Weight
 $lsc_fw100: 100;
@@ -37,9 +35,11 @@ $bfs_7rem: 7rem;
 
 $default-lh:1.6;
 $bsize:1rem;
+
+// screen size
 $breakpoints: (
-  'medium': (min-width: 800px),
-  'large': (min-width: 1000px),
+  'medium': (min-width: 700px),
+  'large': (min-width: 900px),
   'huge': (min-width: 1401px),
 );
 
