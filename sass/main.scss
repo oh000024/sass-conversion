@@ -202,7 +202,7 @@ header {
 }
 
 .content2{
-	@each $content2 in h3,h4,p,li{
+	@each $content2 in h4,p,li{
 		#{$content2} {
 			@include contents_maker($content2);
 		}
@@ -241,6 +241,11 @@ footer {
                 MEDIA QUERIES
 ***********************************************/
 @include media(701px, 900px){
+	.forextend
+{
+	width: $width700px;
+	margin: 0 auto;
+}
   header {
 	  @include mediaheader(700px,230px);
 	  @include mediah1($dark-brown);
@@ -248,13 +253,15 @@ footer {
   }
   section {
     &.focal, &.content1, &.content2 {
-      width: $width700px;
-      margin: 0 auto
+//      width: $width700px;
+//      margin: 0 auto
+		@extend .forextend; 
     }
   }
   footer {
-    width: $width700px;
-    margin: 0 auto
+//    width: $width700px;
+//    margin: 0 auto
+	  @extend .forextend;
   }
   .col-4 {
     width: $width50pc;
@@ -285,6 +292,11 @@ footer {
 }
 
 @include media(901px,1400px) {
+	.forextend
+	{
+		      width: $width900px;
+      margin: 0 auto
+	}
 	  header {
 		 @include mediaheader(900px,300px);
 		  @include  mediah1($dark-blue);
@@ -292,13 +304,15 @@ footer {
   }
   section {
     &.focal, &.content1, &.content2 {
-      width: $width900px;
-      margin: 0 auto
+//      width: $width900px;
+//      margin: 0 auto
+		@extend .forextend;
     }
   }
   footer {
-    width: $width900px;
-    margin: 0 auto
+//    width: $width900px;
+//    margin: 0 auto
+	  @extend .forextend;
   }
   section.focal {
     h2, p.author {
